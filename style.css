@@ -1,0 +1,150 @@
+header {
+    height: 100vh;
+    width: 100%;
+    background: #233950;
+    position: relative;
+}
+
+.logo {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.slider-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 65%;
+}
+
+@media (min-width: 1300px) {
+    .slider-header h2 {
+        animation: title-animate;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+
+    @keyframes title-animate {
+        0% {
+            letter-spacing: normal;
+        }
+
+        100% {
+            letter-spacing: 10px;
+        }
+    }
+}
+
+.slider-header p {
+    line-height: 1.8;
+}
+
+.button {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.btn-all {
+    border: 2px solid #25b498;
+    padding: 15px 32px;
+    color: #25b498 !important;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+
+.btn-all:hover {
+    text-decoration: none;
+    background: #25b498;
+    color: #fff !important;
+}
+
+.left-coontent h3 {
+    font-weight: 600;
+}
+
+.btn-read-more {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.btn-read {
+    background: #25b498;
+    padding: 15px 32px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.2s;
+    border-radius: 3px;
+}
+
+.btn-read:hover {
+    background: rgba(37, 180, 152, 0.8);
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-coontent p {
+    line-height: 1.8;
+}
+
+.left-coontent .btn-all {
+    display: inline-block !important;
+    margin: 10px 0;
+}
+
+@media (max-width: 576px) {
+    .left-coontent {
+        margin-bottom: 30px;
+    }
+
+    .btn-all {
+        border: 1.5px solid #25b498 !important;
+        padding: 13px 26px !important;
+        border-radius: 2px !important;
+        display: inline-block !important;
+    }
+
+    .slider-header {
+        width: 85% !important;
+    }
+}
+
+.footer-content {
+    margin-top: 120px;
+}
+
+.footer-content p {
+    background: #233950;
+    padding: 30px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.footer-content a {
+    color: #fff;
+}
+
+/* nav */
+header>ul {
+    position: absolute;
+    top: 23%;
+    right: 30px;
+}
+
+ul>li {
+    margin: 50px;
+    list-style: none;
+}
+
+ul>li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* nav */
